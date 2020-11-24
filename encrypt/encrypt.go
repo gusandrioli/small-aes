@@ -12,6 +12,7 @@ import (
 
 func main() {
 	text := []byte("This is my secret message")
+
 	key := []byte("passphrasewhichneedstobe32bytes!")
 
 	//generate aes cipher
