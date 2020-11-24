@@ -11,11 +11,15 @@ import (
 )
 
 func AESEncrypt(args []string) {
-	text := []byte(args[0])
 	key := []byte(args[1])
 
 	if len(key) != 32 && len(key) != 24 && len(key) != 16 {
 		log.Fatal("Wrong size for key")
+	}
+
+	text, err := ioutil.ReadFile(args[0])
+	if err != nil {
+		log.Fatal(err)
 	}
 
 	//generate aes cipher
