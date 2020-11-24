@@ -1,4 +1,4 @@
-package main
+package decrypt
 
 import (
 	"crypto/aes"
@@ -8,7 +8,7 @@ import (
 	"log"
 )
 
-func main() {
+func aesDecrypt() {
 	key := []byte("passphrasewhichneedstobe32bytes!")
 
 	ciphertext, err := ioutil.ReadFile("myfile.data")

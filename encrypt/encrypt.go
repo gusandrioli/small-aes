@@ -1,4 +1,4 @@
-package main
+package encrypt
 
 import (
 	"crypto/aes"
@@ -10,7 +10,7 @@ import (
 	"log"
 )
 
-func main() {
+func aesEncrypt() {
 	text := []byte("This is my secret message")
 
 	key := []byte("passphrasewhichneedstobe32bytes!")
