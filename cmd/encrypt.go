@@ -12,7 +12,7 @@ var encryptCmd = &cobra.Command{
 	Long: `To effectively use this command, pass first your text that will be encrypted
 		then your key (which should be 16, 24, or 32 characters long). For example:
 
-		small-aes text key`,
+		small-aes encrypt your_text your_key`,
 	Run: func(cmd *cobra.Command, args []string) {
 		service.AESEncrypt(args)
 	},

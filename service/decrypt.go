@@ -8,10 +8,10 @@ import (
 	"log"
 )
 
-func aesDecrypt() {
-	key := []byte("passphrasewhichneedstobe32bytes!")
+func AESDecrypt(args []string) {
+	key := []byte(args[1])
 
-	ciphertext, err := ioutil.ReadFile("myfile.data")
+	ciphertext, err := ioutil.ReadFile(args[0])
 	if err != nil {
 		log.Fatal(err)
 	}
