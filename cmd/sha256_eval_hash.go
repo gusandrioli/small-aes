@@ -20,10 +20,10 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// sha256HashCmd represents the sha256Hash command
-var sha256HashCmd = &cobra.Command{
-	Use:   "sha256Hash",
-	Short: "Hashes inputted text into 256 bit hash",
+// sha256EvalHashCmd represents the sha256EvalHash command
+var sha256EvalHashCmd = &cobra.Command{
+	Use:   "sha256EvalHash",
+	Short: "Returns bool if inputted text equals hash",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 
@@ -31,20 +31,20 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		sha256.Hash(args)
+		sha256.EvaluateHash(args)
 	},
 }
 
 func init() {
-	rootCmd.AddCommand(sha256HashCmd)
+	rootCmd.AddCommand(sha256EvalHashCmd)
 
 	// Here you will define your flags and configuration settings.
 
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
-	// sha256HashCmd.PersistentFlags().String("foo", "", "A help for foo")
+	// sha256EvalHashCmd.PersistentFlags().String("foo", "", "A help for foo")
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
-	// sha256HashCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	// sha256EvalHashCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
