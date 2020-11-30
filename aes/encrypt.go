@@ -1,4 +1,4 @@
-package service
+package aes
 
 import (
 	"crypto/aes"
@@ -10,7 +10,7 @@ import (
 	"log"
 )
 
-func AESEncrypt(args []string) {
+func Encrypt(args []string) {
 	key := []byte(args[1])
 
 	if len(key) != 32 && len(key) != 24 && len(key) != 16 {

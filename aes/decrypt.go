@@ -1,4 +1,4 @@
-package service
+package aes
 
 import (
 	"crypto/aes"
@@ -8,7 +8,7 @@ import (
 	"log"
 )
 
-func AESDecrypt(args []string) {
+func Decrypt(args []string) {
 	key := []byte(args[1])
 
 	ciphertext, err := ioutil.ReadFile(args[0])

@@ -1,12 +1,12 @@
 package cmd
 
 import (
-	"github.com/gusandrioli/small-aes/service"
+	"github.com/gusandrioli/small-aes/aes"
 	"github.com/spf13/cobra"
 )
 
 // aesEncryptCmd represents the aesEncrypt command
-var encryptCmd = &cobra.Command{
+var aesEncryptCmd = &cobra.Command{
 	Use:   "encrypt",
 	Short: "Encrypts your message in 16, 24, or 32 bytes.",
 	Long: `To effectively use this command, pass first your text that will be encrypted
@@ -14,12 +14,12 @@ var encryptCmd = &cobra.Command{
 
 		small-aes encrypt your_text your_key`,
 	Run: func(cmd *cobra.Command, args []string) {
-		service.AESEncrypt(args)
+		aes.Encrypt(args)
 	},
 }
 
 func init() {
-	rootCmd.AddCommand(encryptCmd)
+	rootCmd.AddCommand(aesEncryptCmd)
 
 	// Here you will define your flags and configuration settings.
 
