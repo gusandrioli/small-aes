@@ -23,9 +23,9 @@ func EvaluateHash(args []string) {
 	hexHasher := []byte(fmt.Sprintf("%x", hasher[:]))
 
 	if string(hexHasher) == string(hash) {
-		fmt.Printf("True")
+		fmt.Printf("The hash matches the input")
 	} else {
-		fmt.Printf("False")
+		fmt.Printf("The hash doesn't match the input")
 	}
 
 }
