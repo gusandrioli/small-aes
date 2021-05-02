@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-var chars = []byte("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*-~|;:,.")
+var chars = []byte("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*~")
 
 // NewSequence generates random string of 256 bytes
 func NewSequence() string {
