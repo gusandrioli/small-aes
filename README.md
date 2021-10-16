@@ -2,20 +2,34 @@
 Simple Encrypter/Hasher CLI application.
 
 ## Installation
-### 1 - Executable
+### 1 - Install package
+```sh
+go install github.com/gusandrioli/small-aes
+```
+
+### 2 - Executable
 Go to Releases and download the latest binary. Then run it locally:
 ```sh
 ./small-aes
 ```
 
-### 2 - Download package
+## Example
 ```sh
-go get -u github.com/gusandrioli/gkvDB
+small-aes txtEncrypt test.txt yoursuperpasswrd # AES encrypts txt
+```
+```sh
+small-aes pdfEncrypt test.pdf # AES encrypts pdf and returns 127 byte password
 ```
 
-
-
-
+## Commands
+```
+pdfDecrypt     Decrypts pdf with a 127 byte key
+pdfEncrypt     Encrypts pdf with AES and a 127 byte key
+sha256EvalHash Returns bool if txt file equals hash
+sha256Hash     Hashes txt file into 32 byte hash
+txtDecrypt     Decrypts your message with a key of 16, 24, or 32 bytes.
+txtEncrypt     Encrypts your message with a key 16, 24, or 32 bytes.
+```
 
 ## References
 1. PDF encryption wraps the [pdfcpu API](https://github.com/pdfcpu/pdfcpu).
