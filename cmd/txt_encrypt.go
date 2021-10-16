@@ -1,6 +1,8 @@
 package cmd
 
 import (
+	"log"
+
 	"github.com/gusandrioli/small-aes/aes"
 	"github.com/spf13/cobra"
 )
@@ -14,6 +16,11 @@ var txtEncryptCmd = &cobra.Command{
 
 		small-aes encrypt your_text your_key`,
 	Run: func(cmd *cobra.Command, args []string) {
+		if len(args) == 1 {
+			log.Fatal("Missing a 16, 24, or 32 bytes key")
+			return
+		}
+
 		aes.EncryptTxt(args)
 	},
 }

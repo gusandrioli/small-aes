@@ -8,7 +8,7 @@ import (
 // pdfDecryptCmd represents the decryptPDF command
 var pdfDecryptCmd = &cobra.Command{
 	Use:   "pdfDecrypt",
-	Short: "A brief description of your command",
+	Short: "Decrypts pdf with a 127 byte key",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 

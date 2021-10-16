@@ -8,7 +8,7 @@ import (
 // pdfEncryptCmd represents the pdfEncrypt command
 var pdfEncryptCmd = &cobra.Command{
 	Use:   "pdfEncrypt",
-	Short: "A brief description of your command",
+	Short: "Encrypts pdf with AES and a 127 byte key",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 

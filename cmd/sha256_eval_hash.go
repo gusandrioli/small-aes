@@ -23,7 +23,7 @@ import (
 // sha256EvalHashCmd represents the sha256EvalHash command
 var sha256EvalHashCmd = &cobra.Command{
 	Use:   "sha256EvalHash",
-	Short: "Returns bool if inputted text equals hash",
+	Short: "Returns bool if input text equals hash",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 

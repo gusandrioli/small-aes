@@ -1,4 +1,11 @@
 *.data
 *.pdf
 *.txt
-bin/*
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+small-aes

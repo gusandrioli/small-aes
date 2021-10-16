@@ -28,5 +28,5 @@ func EncryptPDF(args []string) {
 		log.Fatal(err)
 	}
 
-	fmt.Println(key)
+	fmt.Println("This is your password, save it!", key)
 }
