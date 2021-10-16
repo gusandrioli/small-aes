@@ -2,12 +2,12 @@
 Simple Encrypter/Hasher CLI application.
 
 ## Installation
-### 1 - Install package
+### 1 - Download package (Recommended)
 ```sh
 go install github.com/gusandrioli/small-aes
 ```
 
-### 2 - Executable
+### 2 - Download executable
 Go to Releases and download the latest binary. Then run it locally:
 ```sh
 ./small-aes
