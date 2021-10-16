@@ -13,12 +13,10 @@ Go to Releases and download the latest binary. Then run it locally:
 ./small-aes
 ```
 
-## Example
+## Quick Start
 ```sh
+small-aes pdfEncrypt test.pdf                  # AES encrypts pdf and returns 127 byte password
 small-aes txtEncrypt test.txt yoursuperpasswrd # AES encrypts txt
-```
-```sh
-small-aes pdfEncrypt test.pdf # AES encrypts pdf and returns 127 byte password
 ```
 
 ## Commands
