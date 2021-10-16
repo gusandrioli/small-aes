@@ -23,7 +23,7 @@ import (
 // sha256HashCmd represents the sha256Hash command
 var sha256HashCmd = &cobra.Command{
 	Use:   "sha256Hash",
-	Short: "Hashes input text into 256 bit hash",
+	Short: "Hashes txt file into 32 byte hash",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 
